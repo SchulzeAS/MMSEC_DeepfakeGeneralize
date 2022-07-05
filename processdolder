@@ -1,0 +1,4 @@
+#!/bin/bash
+cp DFMN/$1/*.csv . &&  python3 preprocess.py $1 && python3 merge_csv.py && mv combined_results.csv results/DFMN$1.csv
+rm *.csv
+
